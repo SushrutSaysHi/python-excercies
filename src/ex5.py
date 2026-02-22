@@ -1,7 +1,11 @@
-numbers=[]
+import matplotlib.pyplot as plt
 
-for item in range(2000, 3201):
-    if item%7==0 and item%5!=0:
-        print(f'{item} is divisible by seven and not multiple of 5')
-        numbers.append(str(item))
+data=[1, 2, 3, 4, 5]
+names = ['A', 'B', 'C', 'D', 'E']
+
+plt.pie(data, labels=names, colors=['red', 'blue', 'green', 'orange', 'purple'])
+plt.xlabel("Names")
+plt.ylabel("Data")
+plt.title("Pie Chart Example")
+plt.show()
 
